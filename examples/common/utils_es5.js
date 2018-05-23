@@ -18,7 +18,7 @@ function formatType(valueFormat) {
   if (valueFormat.indexOf(',') > -1) {
     format += ',';
   }
-  splitValueFormat = valueFormat.split(".");
+  var splitValueFormat = valueFormat.split(".");
   format += '.';
   format += splitValueFormat.length > 1 ? splitValueFormat[1].length : 0;
 
